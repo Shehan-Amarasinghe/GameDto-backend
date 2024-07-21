@@ -1,1 +1,12 @@
-GET http://localhost:5216/games/
+GET http://localhost:5216/games
+
+###
+POST http://localhost:5216/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Kids and family",
+    "price": "19.99",
+    "releaseDate": "2011-11-18"
+}

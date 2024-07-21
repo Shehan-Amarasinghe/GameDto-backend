@@ -1,4 +1,4 @@
-GET http://localhost:5216/games
+GET http://localhost:5216/games/5
 
 ###
 POST http://localhost:5216/games
@@ -10,3 +10,19 @@ Content-Type: application/json
     "price": "19.99",
     "releaseDate": "2011-11-18"
 }
+
+###
+PUT http://localhost:5216/games/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Street Fighter III",
+    "genre": "Fighting",
+    "price": "19.99",
+    "releaseDate": "1992-07-15"
+  }
+
+###
+DELETE http://localhost:5216/games/1
+
